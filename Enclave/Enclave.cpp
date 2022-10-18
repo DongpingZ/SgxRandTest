@@ -47,7 +47,7 @@ int printf(const char* fmt, ...)
     //sgx_read_rand((unsigned char *) (&rand), sizeof(int));
 
     //char* out = (char*)malloc (len);
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 100; i++)
     	sgx_read_rand ((unsigned char*) out, len/2);
 
 	sgx_sha256_hash_t *hash1;
